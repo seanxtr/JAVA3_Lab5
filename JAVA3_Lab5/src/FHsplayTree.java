@@ -173,3 +173,26 @@ public class FHsplayTree<E extends Comparable< ? super E>>
        return mRoot;
    }
 }
+
+/********** RUN *************
+
+Initial size: 0
+New size: 0
+
+Traversal
+1 2 3 4 5 6 7 8 9 
+ oops 
+splay -1 --> root: 1 height: 5
+ oops 
+splay 0 --> root: 1 height: 5
+splay 1 --> root: 1 height: 5
+splay 2 --> root: 2 height: 3
+splay 3 --> root: 3 height: 4
+splay 4 --> root: 4 height: 3
+splay 5 --> root: 5 height: 4
+splay 6 --> root: 6 height: 5
+splay 7 --> root: 7 height: 6
+splay 8 --> root: 8 height: 7
+splay 9 --> root: 9 height: 8
+
+****************************/
