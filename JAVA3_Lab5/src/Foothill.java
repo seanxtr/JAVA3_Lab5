@@ -1,4 +1,5 @@
 // CIS 1C Assignment #5
+// Part A
 
 import cs_1c.*;
 
@@ -23,7 +24,7 @@ public class Foothill
       searchTree.traverse(intPrinter);
 
       System.out.println( "Initial size: " + searchTree.size() );
-      for (k = 1; k <= 9; k++)
+      for (k = 1; k <= 32; k++)
          searchTree.insert(k);
       System.out.println( "New size: " + searchTree.size() );
 
