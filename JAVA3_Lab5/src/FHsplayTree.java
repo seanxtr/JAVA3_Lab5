@@ -165,11 +165,11 @@ public class FHsplayTree<E extends Comparable< ? super E>>
     * Find an node in the tree
     */
    protected FHs_treeNode<E> find( FHs_treeNode<E> root, E x ){
-       root = splay(root, x);
+       mRoot = splay(mRoot, x);
 
-       if( root == null || root.data.compareTo(x) != 0 )
+       if( mRoot == null || mRoot.data.compareTo(x) != 0 )
            return null;
 
-       return root;
+       return mRoot;
    }
 }
